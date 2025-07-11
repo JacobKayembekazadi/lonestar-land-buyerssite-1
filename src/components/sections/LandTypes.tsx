@@ -1,4 +1,4 @@
-import { LayoutGrid, Tractor, Trees } from "lucide-react";
+import { LayoutGrid, Tractor, Trees, Building2, KeyRound, Scaling } from "lucide-react";
 import type { LucideProps } from "lucide-react";
 
 interface LandType {
@@ -22,6 +22,21 @@ const landTypes: LandType[] = [
     icon: Trees,
     title: "Recreational Land",
     description: "Hunting, fishing, and timber tracts.",
+  },
+   {
+    icon: Building2,
+    title: "Commercial Land",
+    description: "Development and investment properties.",
+  },
+  {
+    icon: KeyRound,
+    title: "Problem Properties",
+    description: "Landlocked, distressed, or unique situations.",
+  },
+  {
+    icon: Scaling,
+    title: "Any Size",
+    description: "From 0.1 acres to 1000+ acre ranches.",
   },
 ];
 
