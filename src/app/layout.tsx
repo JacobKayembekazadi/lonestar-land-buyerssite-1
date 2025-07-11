@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={cn("font-body antialiased", lato.variable, montserrat.variable)}>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className={cn("font-body antialiased", lato.variable, montserrat.variable)} suppressHydrationWarning>
         {children}
         <Toaster />
       </body>
