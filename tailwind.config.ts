@@ -105,15 +105,32 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
       },
       boxShadow: {
-        DEFAULT: 'none',
-        sm: 'none',
-        md: 'none',
-        lg: 'none',
-        xl: 'none',
-        '2xl': 'none',
-        inner: 'none',
+        DEFAULT: '0 2px 8px 0 hsl(var(--primary) / 0.1)',
+        sm: '0 1px 2px 0 hsl(var(--primary) / 0.05)',
+        md: '0 4px 12px 0 hsl(var(--primary) / 0.15)',
+        lg: '0 8px 16px 0 hsl(var(--primary) / 0.2)',
+        xl: '0 12px 24px 0 hsl(var(--primary) / 0.25)',
+        '2xl': '0 24px 48px 0 hsl(var(--primary) / 0.3)',
+        inner: 'inset 0 2px 4px 0 hsl(var(--primary) / 0.05)',
+      },
+      textShadow: {
+        DEFAULT: '0 1px 3px hsl(var(--primary) / 0.5)',
+        lg: '0 2px 5px hsl(var(--primary) / 0.5)',
       }
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    function ({ addUtilities, theme }: { addUtilities: any, theme: any }) {
+      const newUtilities = {
+        '.text-shadow': {
+          textShadow: theme('textShadow.DEFAULT'),
+        },
+        '.text-shadow-lg': {
+          textShadow: theme('textShadow.lg'),
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }
+  ],
 } satisfies Config;

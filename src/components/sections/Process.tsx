@@ -28,18 +28,21 @@ export default function Process() {
             A simple, transparent process to get you paid fast.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 text-center">
-          {steps.map((step) => (
-            <div key={step.num} className="p-6">
-              <div className="flex items-center justify-center h-16 w-16 bg-primary/10 text-primary rounded-full mx-auto text-2xl font-bold mb-4">
-                {step.num}
+        <div className="relative">
+          <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-border/20" aria-hidden="true"></div>
+          <div className="grid md:grid-cols-3 gap-8 text-center relative">
+            {steps.map((step) => (
+              <div key={step.num} className="p-6">
+                <div className="flex items-center justify-center h-16 w-16 bg-card border-2 border-primary text-primary rounded-full mx-auto text-2xl font-bold mb-4 shadow-lg">
+                  {step.num}
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  {step.title}
+                </h3>
+                <p className="text-muted-foreground">{step.description}</p>
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">
-                {step.title}
-              </h3>
-              <p className="text-muted-foreground">{step.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
