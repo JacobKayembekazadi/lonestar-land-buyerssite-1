@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState } from "react-dom";
+import { useActionState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -40,7 +40,7 @@ const usStates = [
 
 export function ValuationForm() {
   const initialState: ValuationResultState = { message: "" };
-  const [state, formAction] = useFormState(getLandValue, initialState);
+  const [state, formAction] = useActionState(getLandValue, initialState);
   
   const { register, handleSubmit, formState: { errors, isSubmitting }, control, setValue } = useForm<FormData>({
     resolver: zodResolver(formSchema),
