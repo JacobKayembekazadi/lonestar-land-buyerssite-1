@@ -1,10 +1,13 @@
 import { LayoutGrid, Tractor, Trees, Building2, KeyRound, Scaling } from "lucide-react";
 import type { LucideProps } from "lucide-react";
+import Image from "next/image";
 
 interface LandType {
   icon: React.ForwardRefExoticComponent<Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>>;
   title: string;
   description: string;
+  image: string;
+  imageAlt: string;
 }
 
 const landTypes: LandType[] = [
@@ -12,31 +15,43 @@ const landTypes: LandType[] = [
     icon: LayoutGrid,
     title: "Vacant Lots",
     description: "Suburban, urban, and infill lots.",
+    image: "/images/image-fx-2025-07-11t093043-259.jpg",
+    imageAlt: "Empty suburban lot ready for development"
   },
   {
     icon: Tractor,
     title: "Farm & Ranch Land",
     description: "Large rural parcels and acreage.",
+    image: "/images/10-acre-homestead-ideas-and-layouts.jpg",
+    imageAlt: "Texas farm and ranch land with open fields"
   },
   {
     icon: Trees,
     title: "Recreational Land",
     description: "Hunting, fishing, and timber tracts.",
+    image: "/images/50-dreamy-houses-with-land-to-call-your-own.jpg",
+    imageAlt: "Wooded recreational land perfect for hunting and fishing"
   },
    {
     icon: Building2,
     title: "Commercial Land",
     description: "Development and investment properties.",
+    image: "/images/image-fx-2025-07-11t093046-882.jpg",
+    imageAlt: "Commercial development land in prime location"
   },
   {
     icon: KeyRound,
     title: "Problem Properties",
     description: "Landlocked, distressed, or unique situations.",
+    image: "/images/image-fx-2025-07-11t093043-259.jpg",
+    imageAlt: "Challenging property requiring specialized expertise"
   },
   {
     icon: Scaling,
     title: "Any Size",
     description: "From 0.1 acres to 1000+ acre ranches.",
+    image: "/images/10-acre-homestead-ideas-and-layouts.jpg",
+    imageAlt: "Large ranch property showcasing land of any size"
   },
 ];
 
@@ -49,15 +64,28 @@ export default function LandTypes() {
             We Buy All Types of Texas Land
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {landTypes.map((landType) => (
             <div
               key={landType.title}
-              className="bg-background p-6 rounded-lg flex items-center space-x-4"
+              className="bg-background rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <landType.icon className="w-10 h-10 text-cta flex-shrink-0" strokeWidth={1.5}/>
-              <div>
-                <h3 className="text-lg font-semibold text-foreground">
+              {/* Image Section */}
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={landType.image}
+                  alt={landType.imageAlt}
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                  <landType.icon className="w-12 h-12 text-white opacity-80" strokeWidth={1.5}/>
+                </div>
+              </div>
+              
+              {/* Content Section */}
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-foreground mb-2">
                   {landType.title}
                 </h3>
                 <p className="text-muted-foreground">{landType.description}</p>

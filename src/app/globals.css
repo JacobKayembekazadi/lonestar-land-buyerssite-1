@@ -89,6 +89,9 @@ body {
   * {
     @apply border-border;
   }
+  html, body {
+    height: 100%;
+  }
   body {
     @apply bg-background text-foreground;
      background-image: radial-gradient(circle at 1px 1px, hsl(var(--border)) 1px, transparent 0);
@@ -103,7 +106,34 @@ body {
 }
 
 .hero-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://placehold.co/1600x900.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/images/50-dreamy-houses-with-land-to-call-your-own.jpg');
     background-size: cover;
     background-position: center;
+}
+
+/* Embla Carousel Styles */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    flex: 0 0 33.333333%;
+  }
 }

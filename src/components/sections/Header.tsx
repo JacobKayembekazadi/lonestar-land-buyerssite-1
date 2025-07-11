@@ -9,7 +9,15 @@ export default function Header() {
           <Link href="/" className="font-headline text-xl md:text-2xl text-primary">
             LoneStar Land Buyers
           </Link>
-          <Button asChild className="hidden md:inline-block bg-cta text-cta-foreground">
+          <nav className="hidden md:flex items-center space-x-4">
+            <Link href="#about" className="text-sm font-medium text-muted-foreground hover:text-primary">About</Link>
+            <Link href="#process" className="text-sm font-medium text-muted-foreground hover:text-primary">Process</Link>
+            <Link href="#contact" className="text-sm font-medium text-muted-foreground hover:text-primary">Contact</Link>
+            <Button asChild className="bg-cta text-cta-foreground">
+              <a href="#valuation-form">Get My Offer</a>
+            </Button>
+          </nav>
+          <Button asChild className="md:hidden bg-cta text-cta-foreground">
             <a href="#valuation-form">Get My Offer</a>
           </Button>
         </div>

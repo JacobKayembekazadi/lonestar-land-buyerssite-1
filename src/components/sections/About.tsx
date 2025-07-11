@@ -19,7 +19,7 @@ export default function About() {
           </div>
           <div>
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/images/image-fx-2025-07-11t093043-259.jpg"
               alt="LoneStar Land Buyers Team"
               width={600}
               height={400}
