@@ -1,0 +1,34 @@
+import Image from "next/image";
+
+export default function About() {
+  return (
+    <section id="about" className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              About LoneStar Land Buyers
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Founded by Houston real-estate investors who saw landowners
+              struggle with slow MLS listings, LoneStar Land Buyers offers a
+              faster, fee-free way to turn unused land into cash. From remote
+              West Texas acreage to suburban infill lots, we provide transparent
+              offers, local expertise, and a stress-free closing experience.
+            </p>
+          </div>
+          <div>
+            <Image
+              src="https://placehold.co/600x400.png"
+              alt="LoneStar Land Buyers Team"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg w-full h-auto"
+              data-ai-hint="houston team"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
