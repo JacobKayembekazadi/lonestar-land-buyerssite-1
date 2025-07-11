@@ -19,7 +19,7 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-       <Card className="shadow-md">
+       <Card className="bg-background">
          <CardContent className="p-8">
             <Alert variant="default" className="bg-green-100 border-green-200 text-green-800">
                 <CheckCircle2 className="h-4 w-4 !text-green-800" />
@@ -34,7 +34,7 @@ export function ContactForm() {
   }
 
   return (
-    <Card className="shadow-md">
+    <Card className="bg-background">
       <CardHeader>
         <CardTitle>Send Us a Message</CardTitle>
       </CardHeader>
@@ -73,7 +73,7 @@ export function ContactForm() {
           <div>
             <Button
               type="submit"
-              className="w-full bg-primary text-primary-foreground font-bold py-3 px-6 hover:bg-primary/90 transition-colors"
+              className="w-full bg-primary text-primary-foreground font-bold py-3 px-6 transition-colors"
             >
               Send Message
             </Button>

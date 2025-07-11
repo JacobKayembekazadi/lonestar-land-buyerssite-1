@@ -7,7 +7,7 @@ import { ContactForm } from "@/components/ContactForm";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-muted/50">
+    <section id="contact" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
@@ -15,7 +15,7 @@ export default function Contact() {
           </h2>
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
-          <Card className="lg:col-span-1 shadow-md">
+          <Card className="lg:col-span-1 bg-background">
             <CardHeader>
               <CardTitle>Contact Details</CardTitle>
             </CardHeader>

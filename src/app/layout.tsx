@@ -1,10 +1,11 @@
 import type {Metadata} from 'next';
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Lato, Montserrat } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Toaster } from "@/components/ui/toaster"
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const lato = Lato({ subsets: ['latin'], weight: ["400"], variable: '--font-lato' });
+const montserrat = Montserrat({ subsets: ['latin'], weight: ["600", "700"], variable: '--font-montserrat' });
 
 export const metadata: Metadata = {
   title: 'LoneStar Land Buyers — Sell Your Land for a Fair Cash Offer in 24 Hours | Houston, TX',
@@ -18,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={cn("font-body antialiased", inter.variable)}>
+      <body className={cn("font-body antialiased", lato.variable, montserrat.variable)}>
         {children}
         <Toaster />
       </body>

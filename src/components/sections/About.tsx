@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 md:py-24 bg-white">
+    <section id="about" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -23,7 +23,7 @@ export default function About() {
               alt="LoneStar Land Buyers Team"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg w-full h-auto"
+              className="rounded-lg w-full h-auto"
               data-ai-hint="houston team"
             />
           </div>

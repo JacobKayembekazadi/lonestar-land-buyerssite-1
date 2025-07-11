@@ -27,7 +27,7 @@ const guarantees: GuaranteeItem[] = [
 
 export default function Guarantee() {
   return (
-    <section id="guarantee" className="py-16 md:py-24 bg-primary text-primary-foreground">
+    <section id="guarantee" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -41,7 +41,7 @@ export default function Guarantee() {
                 <guarantee.icon className="w-12 h-12 text-cta" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-semibold mb-2">{guarantee.title}</h3>
-              <p className="text-primary-foreground/80">{guarantee.description}</p>
+              <p className="text-muted-foreground">{guarantee.description}</p>
             </div>
           ))}
         </div>

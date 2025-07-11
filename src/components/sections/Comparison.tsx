@@ -35,7 +35,7 @@ export default function Comparison() {
   ];
 
   return (
-    <section id="comparison" className="py-16 md:py-24 bg-muted/50">
+    <section id="comparison" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
@@ -47,7 +47,7 @@ export default function Comparison() {
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card rounded-xl shadow-lg overflow-hidden">
+          <div className="bg-card rounded-xl overflow-hidden">
             <div className="grid grid-cols-3 font-bold text-lg">
               <div className="p-4 text-foreground col-span-1">Feature</div>
               <div className="p-4 bg-primary text-primary-foreground text-center col-span-1">
@@ -62,7 +62,7 @@ export default function Comparison() {
                 <div
                   key={item.feature}
                   className={`grid grid-cols-3 items-center ${
-                    index % 2 === 1 ? "bg-muted/50" : ""
+                    index % 2 === 1 ? "bg-background" : ""
                   }`}
                 >
                   <div className="p-4 font-semibold text-foreground col-span-1">

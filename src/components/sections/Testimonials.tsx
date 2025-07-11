@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-white">
+    <section id="testimonials" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
@@ -33,7 +33,7 @@ export default function Testimonials() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="bg-muted/50 p-8 rounded-lg">
+            <div key={testimonial.name} className="bg-card p-8 rounded-lg">
               <blockquote className="text-foreground italic mb-4">
                 "{testimonial.quote}"
               </blockquote>

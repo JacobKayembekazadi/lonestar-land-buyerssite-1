@@ -35,7 +35,7 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section id="faq" className="py-16 md:py-24 bg-muted/50">
+    <section id="faq" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
@@ -45,7 +45,7 @@ export default function Faq() {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq) => (
-              <AccordionItem key={faq.value} value={faq.value} className="bg-card rounded-lg shadow-md border-b-0">
+              <AccordionItem key={faq.value} value={faq.value} className="bg-background rounded-lg border-b-0">
                 <AccordionTrigger className="p-5 font-semibold text-left hover:no-underline">
                   {faq.q}
                 </AccordionTrigger>

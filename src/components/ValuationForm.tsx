@@ -49,7 +49,7 @@ export function ValuationForm() {
 
   if (state.message === "Success!" && state.result) {
     return (
-      <Card className="bg-white text-gray-800 p-8 rounded-lg shadow-2xl space-y-6">
+      <Card className="bg-card text-foreground p-8 rounded-lg space-y-6">
         <CardContent className="p-0">
            <Alert>
              <BotMessageSquare className="h-4 w-4" />
@@ -72,7 +72,7 @@ export function ValuationForm() {
   }
   
   return (
-      <form action={formAction} className="bg-white text-gray-800 p-8 rounded-lg shadow-2xl space-y-6">
+      <form action={formAction} className="bg-card text-foreground p-8 rounded-lg space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
             <Label htmlFor="name">Full Name</Label>
@@ -121,7 +121,7 @@ export function ValuationForm() {
         )}
 
         <div>
-           <Button type="submit" disabled={isSubmitting} className="w-full bg-cta text-cta-foreground font-bold py-4 px-6 text-lg hover:bg-cta/90 transition-colors shadow-lg h-14">
+           <Button type="submit" disabled={isSubmitting} className="w-full bg-cta text-cta-foreground font-bold py-4 px-6 text-lg h-14">
             {isSubmitting ? <Loader2 className="mr-2 h-6 w-6 animate-spin" /> : 'Calculate My Offer'}
           </Button>
         </div>

@@ -27,7 +27,7 @@ const landTypes: LandType[] = [
 
 export default function LandTypes() {
   return (
-    <section id="land-types" className="py-16 md:py-24 bg-muted/50">
+    <section id="land-types" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
@@ -38,7 +38,7 @@ export default function LandTypes() {
           {landTypes.map((landType) => (
             <div
               key={landType.title}
-              className="bg-card p-6 rounded-lg shadow-md flex items-center space-x-4"
+              className="bg-background p-6 rounded-lg flex items-center space-x-4"
             >
               <landType.icon className="w-10 h-10 text-cta flex-shrink-0" strokeWidth={1.5}/>
               <div>
