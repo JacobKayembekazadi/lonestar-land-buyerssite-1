@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -15,6 +16,9 @@ const SuggestLandValueInputSchema = z.object({
   state: z.string().describe('The state where the land is located.'),
   county: z.string().describe('The county where the land is located.'),
   acreage: z.number().describe('The acreage of the land.'),
+  propertyType: z.string().optional().describe('The type of property (e.g., Vacant Lot, Farm & Ranch).'),
+  sellingTimeline: z.string().optional().describe('How quickly the user wants to sell (e.g., ASAP, 1-3 Months).'),
+  additionalInfo: z.string().optional().describe('Any additional notes from the user about the land or their situation.'),
 });
 export type SuggestLandValueInput = z.infer<typeof SuggestLandValueInputSchema>;
 
@@ -42,13 +46,19 @@ const prompt = ai.definePrompt({
   name: 'suggestLandValuePrompt',
   input: {schema: SuggestLandValueInputSchema},
   output: {schema: SuggestLandValueOutputSchema},
-  prompt: `You are an expert in land valuation in the United States. A user will provide the state, county, and acreage of a plot of land. You will return an estimated value range for the land, as well as a confidence level for your estimate.
+  prompt: `You are an expert in land valuation in the United States. A user will provide details about a plot of land. You will return an estimated value range for the land, as well as a confidence level for your estimate.
 
+Core Details:
 State: {{{state}}}
 County: {{{county}}}
 Acreage: {{{acreage}}}
 
-Respond in a calm, helpful tone.
+Additional Context:
+Property Type: {{{propertyType}}}
+Selling Timeline: {{{sellingTimeline}}}
+User Notes: {{{additionalInfo}}}
+
+Analyze all the provided information to give the most accurate valuation possible. Respond in a calm, helpful tone.
 `,
 });
 
