@@ -1,4 +1,5 @@
 import { ValuationForm } from "@/components/ValuationForm";
+import { ClientOnly } from "@/components/ClientOnly";
 
 export default function Valuation() {
   return (
@@ -13,7 +14,9 @@ export default function Valuation() {
           </p>
         </div>
         <div className="mt-10 max-w-2xl mx-auto">
-          <ValuationForm />
+          <ClientOnly>
+            <ValuationForm />
+          </ClientOnly>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/ContactForm";
+import { ClientOnly } from "@/components/ClientOnly";
 
 export default function Contact() {
   return (
@@ -59,7 +60,9 @@ export default function Contact() {
             </CardContent>
           </Card>
           <div className="lg:col-span-2">
-            <ContactForm />
+            <ClientOnly>
+                <ContactForm />
+            </ClientOnly>
           </div>
         </div>
       </div>
