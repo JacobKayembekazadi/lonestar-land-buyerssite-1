@@ -1,6 +1,7 @@
+"use client";
 import { LayoutGrid, Tractor, Trees, Building2, KeyRound, Scaling } from "lucide-react";
 import type { LucideProps } from "lucide-react";
-import LandTypeImage from "./LandTypeImage";
+import Image from "next/image";
 
 interface LandType {
   icon: React.ForwardRefExoticComponent<Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>>;
@@ -72,9 +73,15 @@ export default function LandTypes() {
             >
               {/* Image Section */}
               <div className="relative h-48 overflow-hidden">
-                <LandTypeImage
+                <Image
                   src={landType.image}
                   alt={landType.imageAlt}
+                  fill
+                  className="object-cover transition-transform duration-300 hover:scale-105"
+                  onError={(e) => {
+                    // Fallback to a default pattern if image fails to load
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/60 to-primary/80 flex items-center justify-center">
                   <landType.icon className="w-12 h-12 text-white opacity-90" strokeWidth={1.5}/>

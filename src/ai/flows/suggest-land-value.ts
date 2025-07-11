@@ -9,7 +9,7 @@
  * - SuggestLandValueOutput - The return type for the suggestLandValue function.
  */
 
-import {ai} from '@/ai/genkit';
+import {ai} from '../genkit';
 import {z} from 'genkit';
 
 const SuggestLandValueInputSchema = z.object({

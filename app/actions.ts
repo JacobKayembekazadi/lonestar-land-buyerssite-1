@@ -1,7 +1,7 @@
 
 "use server";
 
-import { suggestLandValue, SuggestLandValueInput } from "@/ai/flows/suggest-land-value";
+import { suggestLandValue, SuggestLandValueInput } from "../src/ai/flows/suggest-land-value";
 import { z } from "zod";
 
 const SuggestLandValueInputSchema = z.object({

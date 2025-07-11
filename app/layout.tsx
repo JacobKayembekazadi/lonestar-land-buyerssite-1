@@ -8,8 +8,8 @@ const lato = Lato({ subsets: ['latin'], weight: ["400"], variable: '--font-lato'
 const montserrat = Montserrat({ subsets: ['latin'], weight: ["600", "700"], variable: '--font-montserrat' });
 
 export const metadata: Metadata = {
-  title: 'LoneStar Land Buyers — Sell Your Land for a Fair Cash Offer in 24 Hours | Houston, TX',
-  description: 'Need to sell vacant land quickly? Houston-based LoneStar Land Buyers delivers no-obligation cash offers within 24 hours and covers every closing cost.',
+  title: 'Axelson John — Sell Your Land for a Fair Cash Offer in 24 Hours | Houston, TX',
+  description: 'Need to sell vacant land quickly? Houston-based land investor Axelson John delivers no-obligation cash offers within 24 hours and covers every closing cost.',
 };
 
 export default function RootLayout({
