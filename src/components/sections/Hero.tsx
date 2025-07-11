@@ -14,7 +14,7 @@ export default function Hero() {
           your schedule.
         </p>
         <Button asChild size="lg" className="bg-cta text-cta-foreground py-4 px-8 text-lg">
-          <a href="#valuation-form">Check Your Land’s Value →</a>
+          <a href="#valuation-form">Get My Fair Cash Offer →</a>
         </Button>
         <div className="mt-12 flex flex-wrap justify-center items-center gap-6 md:gap-10 text-muted-foreground">
           <span className="flex items-center gap-2 font-semibold">

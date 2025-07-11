@@ -1,3 +1,5 @@
+import { Star } from 'lucide-react';
+
 interface Testimonial {
   quote: string;
   name: string;
@@ -33,12 +35,21 @@ export default function Testimonials() {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="bg-card p-8 rounded-lg">
-              <blockquote className="text-foreground italic mb-4">
+            <div key={testimonial.name} className="bg-card p-8 rounded-lg flex flex-col">
+              <div className="flex text-primary mb-4">
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+              </div>
+              <blockquote className="text-foreground italic mb-4 flex-grow">
                 "{testimonial.quote}"
               </blockquote>
-              <p className="font-bold text-foreground">{testimonial.name}</p>
-              <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+              <div>
+                <p className="font-bold text-foreground">{testimonial.name}</p>
+                <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+              </div>
             </div>
           ))}
         </div>

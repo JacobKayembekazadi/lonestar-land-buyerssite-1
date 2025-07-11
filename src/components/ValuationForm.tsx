@@ -77,13 +77,13 @@ export function ValuationForm() {
       <form action={formAction} className="bg-card border border-border text-foreground p-8 md:p-12 rounded-lg space-y-8 shadow-lg">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
-            <Label htmlFor="name">Full Name</Label>
-            <Input id="name" {...register("name")} className="mt-2" />
+            <Label htmlFor="name">What's your name?</Label>
+            <Input id="name" {...register("name")} className="mt-2" placeholder="e.g. Jane Doe" />
             {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name.message}</p>}
           </div>
           <div>
-            <Label htmlFor="email">Email Address</Label>
-            <Input id="email" type="email" {...register("email")} className="mt-2" />
+            <Label htmlFor="email">And your email address?</Label>
+            <Input id="email" type="email" {...register("email")} className="mt-2" placeholder="jane.doe@example.com" />
             {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email.message}</p>}
           </div>
         </div>
@@ -103,13 +103,13 @@ export function ValuationForm() {
           </div>
           <div>
             <Label htmlFor="county">County</Label>
-            <Input id="county" {...register("county")} className="mt-2" />
+            <Input id="county" {...register("county")} className="mt-2" placeholder="e.g. Harris" />
             {errors.county && <p className="text-red-600 text-sm mt-1">{errors.county.message}</p>}
              {state.errors?.county && <p className="text-red-600 text-sm mt-1">{state.errors.county[0]}</p>}
           </div>
           <div>
-            <Label htmlFor="acreage">Acreage (Approx.)</Label>
-            <Input id="acreage" type="number" {...register("acreage")} className="mt-2" />
+            <Label htmlFor="acreage">Acreage</Label>
+            <Input id="acreage" type="number" {...register("acreage")} className="mt-2" placeholder="e.g. 10.5" />
             {errors.acreage && <p className="text-red-600 text-sm mt-1">{errors.acreage.message}</p>}
             {state.errors?.acreage && <p className="text-red-600 text-sm mt-1">{state.errors.acreage[0]}</p>}
           </div>
@@ -124,9 +124,10 @@ export function ValuationForm() {
 
         <div>
            <Button type="submit" disabled={isSubmitting} className="w-full bg-cta text-cta-foreground font-bold py-4 px-6 text-lg h-14">
-            {isSubmitting ? <Loader2 className="mr-2 h-6 w-6 animate-spin" /> : 'Calculate My Offer'}
+            {isSubmitting ? <Loader2 className="mr-2 h-6 w-6 animate-spin" /> : 'Get My Free Offer'}
           </Button>
         </div>
+        <p className="text-center text-xs text-muted-foreground">Your information is secure and will not be shared.</p>
       </form>
   );
 }
