@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export default function Process() {
   const steps = [
     {
@@ -43,6 +45,11 @@ export default function Process() {
               </div>
             ))}
           </div>
+        </div>
+        <div className="text-center mt-12">
+            <Button asChild size="lg" className="bg-cta text-cta-foreground py-4 px-8 text-lg">
+                <a href="#valuation-form">Get My Fair Cash Offer →</a>
+            </Button>
         </div>
       </div>
     </section>
