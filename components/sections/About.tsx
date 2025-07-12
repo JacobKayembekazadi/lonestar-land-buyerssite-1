@@ -10,11 +10,7 @@ export default function About() {
               About Axelson John
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Founded by a Houston real-estate investor who saw landowners
-              struggle with slow MLS listings, Axelson offers a
-              faster, fee-free way to turn unused land into cash. From remote
-              West Texas acreage to suburban infill lots, we provide transparent
-              offers, local expertise, and a stress-free closing experience.
+              With years of experience in the Texas land market, Axelson John helps buyers get ahead of the crowd by sourcing exclusive, off-market properties tailored to your needs. Whether you’re looking for investment, development, or a place to build your dream, Axelson brings you real opportunities—no fluff, just real land.
             </p>
           </div>
           <div>

@@ -4,18 +4,18 @@ export default function Process() {
   const steps = [
     {
       num: 1,
-      title: "Tell Us About Your Land",
-      description: "Fill out a quick form with your county, acreage, and contact info.",
+      title: "Drop Your Buy Box",
+      description: "Tell us your location, lot size, and budget—what you want to buy.",
     },
     {
       num: 2,
-      title: "Get Your Cash Offer",
-      description: "We analyze local comps and email a fair market cash price within 24 hours.",
+      title: "Get First Shot at Deals",
+      description: "We’ll send you quiet, off-market land deals that match your criteria—before anyone else sees them.",
     },
     {
       num: 3,
-      title: "Close & Get Paid",
-      description: "Pick your closing date. We cover all fees—funds wired to you on closing day.",
+      title: "Choose & Close Fast",
+      description: "Pick the property you want. We’ll help you close quickly—no fluff, just real land.",
     },
   ];
 
@@ -27,7 +27,7 @@ export default function Process() {
             How It Works
           </h2>
           <p className="text-muted-foreground mt-2">
-            A simple, transparent process to get you paid fast.
+            No fluff. Just real land deals, delivered to you first.
           </p>
         </div>
         <div className="relative">
@@ -48,7 +48,7 @@ export default function Process() {
         </div>
         <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-cta text-cta-foreground py-4 px-8 text-lg">
-                <a href="#valuation-form">Get My Fair Cash Offer →</a>
+                <a href="#buyer-form">See Our Deals →</a>
             </Button>
         </div>
       </div>

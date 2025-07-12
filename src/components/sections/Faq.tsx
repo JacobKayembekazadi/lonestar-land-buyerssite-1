@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    q: "Do you only buy land in Texas?",
-    a: "Texas is our specialty, but we purchase vacant land across the southern United States.",
+    q: "Do you only offer land in Texas?",
+    a: "Yes, our focus is exclusively on providing off-market land deals within the state of Texas.",
     value: "item-1",
   },
   {
-    q: "What kinds of land do you buy?",
-    a: "We buy vacant lots, farm acreage, timberland, and recreational parcels—raw or improved.",
+    q: "What kinds of land do you offer?",
+    a: "We offer a wide variety of land types, including parcels for investment, development, recreation, and building custom homes.",
     value: "item-2",
   },
   {
-    q: "How do you determine the offer price?",
-    a: "We review recent comparable sales, zoning, access, utilities, and local demand to calculate a fair cash value.",
+    q: "How do you find your land deals?",
+    a: "We have a network of contacts that gives us direct access to properties before they ever hit the open market.",
     value: "item-3",
   },
   {
-    q: "Are there any costs to me?",
-    a: "None. LoneStar covers closing costs, title fees, and—in many cases—back taxes.",
+    q: "Are there any fees for buyers?",
+    a: "No, our service is free for buyers. We are compensated by the sellers.",
     value: "item-4",
   },
   {
-    q: "How quickly can I get paid?",
-    a: "Typical closings fund within 7–14 days of accepting our offer, but we can expedite if needed.",
+    q: "How does the buying process work?",
+    a: "You tell us what you're looking for, we bring you the deals, and if you find a property you love, we help you close on it. It's that simple.",
     value: "item-5",
   },
 ];

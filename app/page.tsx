@@ -1,11 +1,9 @@
 import Header from '@/components/sections/Header';
 import Hero from '@/components/sections/Hero';
 import Process from '@/components/sections/Process';
-import Comparison from '@/components/sections/Comparison';
 import WhoWeHelp from '@/components/sections/WhoWeHelp';
 import LandTypes from '@/components/sections/LandTypes';
-import Guarantee from '@/components/sections/Guarantee';
-import Valuation from '@/components/sections/Valuation';
+import BuyerFormSection from '../src/components/sections/BuyerFormSection';
 import Testimonials from '@/components/sections/Testimonials';
 import CtaBanner from '@/components/sections/CtaBanner';
 import Faq from '@/components/sections/Faq';
@@ -20,11 +18,9 @@ export default function Home() {
       <main>
         <Hero />
         <Process />
-        <Comparison />
         <WhoWeHelp />
         <LandTypes />
-        <Guarantee />
-        <Valuation />
+        <BuyerFormSection />
         <Testimonials />
         <CtaBanner />
         <Faq />

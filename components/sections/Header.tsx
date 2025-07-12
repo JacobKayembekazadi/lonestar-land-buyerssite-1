@@ -14,11 +14,11 @@ export default function Header() {
             <Link href="#process" className="text-sm font-medium text-muted-foreground hover:text-primary">Process</Link>
             <Link href="#contact" className="text-sm font-medium text-muted-foreground hover:text-primary">Contact</Link>
             <Button asChild className="bg-cta text-cta-foreground">
-              <a href="#valuation-form">Get My Offer</a>
+              <a href="#buyer-form">See Our Deals</a>
             </Button>
           </nav>
           <Button asChild className="md:hidden bg-cta text-cta-foreground">
-            <a href="#valuation-form">Get My Offer</a>
+            <a href="#buyer-form">See Our Deals</a>
           </Button>
         </div>
       </div>

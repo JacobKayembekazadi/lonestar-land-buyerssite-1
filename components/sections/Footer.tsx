@@ -53,10 +53,10 @@ export default function Footer() {
             </div>
           </div>
            <div className="col-span-1 md:col-span-2 lg:col-span-1">
-             <h4 className="font-semibold text-foreground mb-3">Ready to Sell?</h4>
-             <p className="text-muted-foreground text-sm mb-4">Get your no-obligation cash offer today.</p>
+             <h4 className="font-semibold text-foreground mb-3">Looking for Land?</h4>
+             <p className="text-muted-foreground text-sm mb-4">Drop your buy box below — I'll send you exclusive deals.</p>
             <Button asChild className="bg-cta text-cta-foreground w-full">
-                <a href="#valuation-form">Get My Offer</a>
+                <a href="#buyer-form">Send Me Deals</a>
             </Button>
           </div>
         </div>

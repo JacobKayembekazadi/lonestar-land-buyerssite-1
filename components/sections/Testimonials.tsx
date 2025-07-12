@@ -15,81 +15,81 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "Axelson's offer beat every other buyer and closed in ten days—exactly what I needed.",
+    quote: "Axelson found us the perfect lot before it ever hit the market. The process was fast and easy.",
     name: "Maria G.",
     location: "Harris County, TX",
     image: "/images/testimonial-5.jpg",
-    imageAlt: "Maria G. - Satisfied landowner from Harris County"
+    imageAlt: "Maria G. - Satisfied land buyer from Harris County"
   },
   {
-    quote: "They handled the paperwork, paid my back taxes, and wired the cash the same day we signed.",
+    quote: "We told Axelson our criteria and he brought us several off-market options. We picked the one that fit our needs best.",
     name: "James R.",
     location: "Brazoria County, TX",
     image: "/images/testimonial-6.jpg",
-    imageAlt: "James R. - Happy land seller from Brazoria County"
+    imageAlt: "James R. - Happy land buyer from Brazoria County"
   },
   {
-    quote: "No realtor fees and no hassle. Highly recommend if you've got vacant land to sell.",
+    quote: "No fluff, just real land deals. Highly recommend if you want first shot at Texas properties.",
     name: "Ayesha P.",
     location: "Bell County, TX",
     image: "/images/testimonial-7.jpg",
-    imageAlt: "Ayesha P. - Pleased customer from Bell County"
+    imageAlt: "Ayesha P. - Pleased buyer from Bell County"
   },
   {
-    quote: "The process was straightforward and fast. I got a fair price for my land without any stress.",
+    quote: "The process was straightforward and fast. Axelson made sure we got exactly what we were looking for.",
     name: "John D.",
     location: "Williamson County, TX",
     image: "/images/testimonial-8.jpg",
-    imageAlt: "John D. - Happy customer from Williamson County"
+    imageAlt: "John D. - Happy buyer from Williamson County"
   },
   {
-    quote: "I was skeptical at first, but Axelson exceeded my expectations. Highly recommended.",
+    quote: "I was skeptical at first, but Axelson delivered exclusive deals I couldn't find anywhere else.",
     name: "Emily R.",
     location: "Travis County, TX",
     image: "/images/testimonial-9.jpg",
     imageAlt: "Emily R. - Satisfied client from Travis County"
   },
   {
-    quote: "They bought my land as-is, which was a huge relief. The team was professional and courteous.",
+    quote: "We got access to land before it was listed. Axelson is professional and knows the market.",
     name: "Michael B.",
     location: "Montgomery County, TX",
     image: "/images/testimonial-10.jpg",
-    imageAlt: "Michael B. - Grateful seller from Montgomery County"
+    imageAlt: "Michael B. - Grateful buyer from Montgomery County"
   },
   {
-    quote: "Selling my land was a breeze with Axelson. He is trustworthy and efficient.",
+    quote: "Buying land was a breeze with Axelson. He is trustworthy and efficient.",
     name: "Sarah L.",
     location: "Fort Bend County, TX",
     image: "/images/testimonial-11.jpg",
     imageAlt: "Sarah L. - Impressed client from Fort Bend County"
   },
   {
-    quote: "I inherited land and had no idea what to do. Axelson gave me a fair cash offer and handled everything.",
+    quote: "I told Axelson my budget and location, and he matched me with the right property. Super easy.",
     name: "David K.",
     location: "Denton County, TX",
     image: "/images/testimonial-5.jpg",
-    imageAlt: "David K. - Relieved landowner from Denton County"
+    imageAlt: "David K. - Relieved buyer from Denton County"
   },
   {
-    quote: "Fast, fair, and friendly. I couldn't have asked for a better experience selling my property.",
+    quote: "Fast, fair, and friendly. I couldn't have asked for a better experience buying my property.",
     name: "Jessica M.",
     location: "Collin County, TX",
     image: "/images/testimonial-6.jpg",
-    imageAlt: "Jessica M. - Happy seller from Collin County"
+    imageAlt: "Jessica M. - Happy buyer from Collin County"
   },
   {
-    quote: "From the first call to closing, the process was seamless. I'd recommend them to anyone.",
+    quote: "From the first call to closing, the process was seamless. I'd recommend Axelson to any land buyer.",
     name: "Chris T.",
     location: "Tarrant County, TX",
     image: "/images/testimonial-7.jpg",
-    imageAlt: "Chris T. - Satisfied customer from Tarrant County"
+    imageAlt: "Chris T. - Satisfied buyer from Tarrant County"
   },
   {
-    quote: "They made a difficult situation much easier. I'm grateful for their help and professionalism.",
+    quote: "He made a complicated search much easier. I'm grateful for Axelson's help and professionalism.",
     name: "Amanda S.",
     location: "Dallas County, TX",
     image: "/images/testimonial-8.jpg",
-    imageAlt: "Amanda S. - Thankful client from Dallas County"
+    imageAlt: "Amanda S. - Thankful buyer from Dallas County"
   }
 ];
 
