@@ -23,25 +23,25 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-shadow-lg">
-          Want to Sell Your Land? Get a Fair Offer in 24 Hours.
+          Find Your Perfect Plot of Land in Texas.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-          Skip listings, agent fees, and months of waiting. Receive a
-          no-obligation cash offer backed by local Texas market data—close on
-          your schedule.
+          Discover exclusive land listings you won't find anywhere else. Our
+          team of experts will help you find the perfect property for your
+          needs.
         </p>
         <Button asChild size="lg" className="bg-cta text-cta-foreground py-4 px-8 text-lg">
-          <a href="#valuation-form">Get My Fair Cash Offer →</a>
+          <a href="#buyer-form">Browse Available Land →</a>
         </Button>
         <div className="mt-12 flex flex-wrap justify-center items-center gap-6 md:gap-10 text-muted-foreground">
           <span className="flex items-center gap-2 font-semibold">
-            <Award className="h-5 w-5 text-primary" /> BBB A+ Accredited
+            <Award className="h-5 w-5 text-primary" /> Exclusive Properties
           </span>
           <span className="flex items-center gap-2 font-semibold">
-            <BadgeCheck className="h-5 w-5 text-primary" /> 200+ Texas Landowners Paid
+            <BadgeCheck className="h-5 w-5 text-primary" /> Expert Guidance
           </span>
           <span className="flex items-center gap-2 font-semibold">
-            <Zap className="h-5 w-5 text-primary" /> Fast-Closing Guarantee
+            <Zap className="h-5 w-5 text-primary" /> Simplified Buying Process
           </span>
         </div>
       </div>
