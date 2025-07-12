@@ -23,13 +23,13 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-shadow-lg">
-          LAND BUYERS: Stop Chasing — Start Choosing.
+          Buy Texas Land Before Anyone Else.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-          We get direct access to quiet, off-market land deals before anyone else. You tell us what you're buying — we bring the deals.
+          Get direct access to exclusive, off-market properties. Share your criteria—location, lot size, budget—and Axelson will match you with real opportunities. No fluff. Just land.
         </p>
         <Button asChild size="lg" className="bg-cta text-cta-foreground py-4 px-8 text-lg">
-          <a href="#buyer-form">See Our Deals →</a>
+          <a href="#buyer-form">Get Exclusive Deals</a>
         </Button>
         <div className="mt-12 flex flex-wrap justify-center items-center gap-6 md:gap-10 text-muted-foreground">
           <span className="font-semibold">Location</span>
